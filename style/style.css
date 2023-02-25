@@ -85,7 +85,7 @@ body {
   height: 768px;
   display: flex;
   gap: 60px;
-  background-image: url(/img/promo_watch_main.png), url(/img/promo_Ellipse.png);
+  background-image: url("../img/promo_watch_main.png"), url("../img/promo_Ellipse.png");
   background-repeat: no-repeat;
   background-position-x: 82%, 52%;
 }
@@ -235,15 +235,15 @@ body {
 }
 
 .products-cards-box {
-  margin-top: 25px;
   display: flex;
+  margin-top: 25px;
   justify-content: space-between;
 }
 
 .card-box {
-  min-width: 370px;
-  min-height: 467px;
-  background-image: url(/img/card_bg-image-Ellipse.svg);
+  width: 350px;
+  height: 467px;
+  background-image: url("../img/card_bg-image-Ellipse.svg");
   background-color: #FDFDFB;
   background-repeat: no-repeat;
   background-position: center;
@@ -277,7 +277,6 @@ body {
 
 .card-image {
   margin-top: -25px;
-  margin-left: 12px;
 }
 
 .card-info {
@@ -288,11 +287,6 @@ body {
   padding-left: 40px;
   text-decoration: none;
   color: #1B1A17;
-  transition: all 0.2s;
-}
-
-.card-info:hover {
-  transform: scale(1.2);
 }
 
 .card-info::before {
@@ -311,7 +305,7 @@ body {
 }
 
 .for_bgimage {
-  background-image: url(/img/Ellipse_bg_small.svg), url(/img/Ellipse_bg_larger.svg);
+  background-image: url("../img/Ellipse_bg_small.svg"), url("../img/Ellipse_bg_larger.svg");
   background-repeat: no-repeat;
   background-position-x: 100%;
 }
