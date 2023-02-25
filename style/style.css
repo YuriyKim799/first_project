@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-family: "Prata", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 31px;
+  padding-bottom: 26px;
+}
+
+.main-logo-text {
+  font-family: "Playfair Display";
+  text-decoration: none;
+  color: #555248;
+  transition: all 0.3s;
+}
+
+.main-logo-text:hover {
+  color: #222;
+  transform: scale(1.1);
+}
+
+.nav-main-logo {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-main-links {
+  display: flex;
+  gap: 65px;
+}
+
+.nav-main-links a:hover {
+  color: #222;
+}
+
+.nav-main-links a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #555248;
+}
+
+.nav-main-icons {
+  display: flex;
+  gap: 23px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-like-count {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  right: 22px;
+  bottom: 13px;
+  background-color: #E6C8B4;
+  position: absolute;
+}
+
+.nav-like-count-number {
+  font-size: 8px;
+  line-height: 9px;
+  font-weight: 400;
+  font-family: "Roboto";
+  right: 26px;
+  bottom: 15px;
+  position: absolute;
+}
+
+.promo-wrap {
+  height: 768px;
+  display: flex;
+  gap: 60px;
+  background-image: url(/img/promo_watch_main.png), url(/img/promo_Ellipse.png);
+  background-repeat: no-repeat;
+  background-position-x: 82%, 52%;
+}
+
+.promo-block-text {
+  align-self: center;
+}
+
+.promo-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 707px;
+}
+
+.promo-main-text {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  padding-bottom: 16px;
+}
+
+.promo-main-text::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #8B8371;
+  display: inline-block;
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+.promo-secondary-text {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 39px;
+  padding-left: 62px;
+}
+
+.promo-small-text {
+  color: rgba(27, 26, 23, 0.72);
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 39px;
+  padding-left: 62px;
+}
+
+.promo-button {
+  text-transform: uppercase;
+  padding: 26px 38px;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: #444240;
+  border: 1px solid #444240;
+  margin-left: 62px;
+  transition: all 0.2s;
+}
+
+.promo-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.promo-button:active {
+  background-color: #fff;
+  color: #444240;
+}
+
+.ruble {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.promo-info-price,
+.promo-info-size {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.promo-info-price::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #8B8371;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.promo-info-size::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #8B8371;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+
+.promo-info-size-block {
+  align-self: flex-end;
+}
+
+.products-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 85px;
+}
+
+.products-main-title {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  align-self: center;
+}
+
+.products-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Roboto";
+  text-decoration: none;
+  align-self: flex-end;
+  color: #444240;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #C4C0B6;
+  transition: all 0.2s;
+}
+
+.products-link:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid #222;
+}
+
+.products-cards-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-box {
+  min-width: 370px;
+  min-height: 467px;
+  background-image: url(/img/card_bg-image-Ellipse.svg);
+  background-color: #FDFDFB;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-title {
+  font-family: "Playfair Display";
+  padding: 40px 0 10px 40px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444240;
+}
+
+.card-price {
+  padding-left: 40px;
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444240;
+}
+
+.card_rouble {
+  font-size: 14px;
+  font-family: "Roboto";
+  line-height: 16px;
+  font-weight: 400;
+  color: #444240;
+}
+
+.card-image {
+  margin-top: -25px;
+  margin-left: 12px;
+}
+
+.card-info {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-left: 40px;
+  text-decoration: none;
+  color: #1B1A17;
+  transition: all 0.2s;
+}
+
+.card-info:hover {
+  transform: scale(1.2);
+}
+
+.card-info::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #8B8371;
+  display: inline-block;
+  margin-right: 18px;
+  margin-bottom: 4px;
+}
+
+.about {
+  width: 100%;
+  background: linear-gradient(to right, #F7F5EF 38.5%, #FDFDFB 0%);
+}
+
+.for_bgimage {
+  background-image: url(/img/Ellipse_bg_small.svg), url(/img/Ellipse_bg_larger.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+
+.about-wrap {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.about-slider {
+  text-align: end;
+}
+
+.slider-button-block {
+  padding-top: 20px;
+  padding-right: 82px;
+  padding-bottom: 20px;
+}
+
+.slider-pagination-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.slider_buttons-pagination {
+  background-color: transparent;
+  border: none;
+}
+
+.about-banner {
+  padding: 52px 0 0 52px;
+}
+
+.about-info-title {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #1B1A17;
+}
+
+.about-info-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444240;
+  padding-top: 38px;
+  padding-bottom: 45px;
+}
+
+.about-info-button {
+  background-color: #D4B098;
+  border: none;
+  color: #fff;
+  padding: 26px 38px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.features-wrap {
+  padding-top: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.features-main-text {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: #1B1A17;
+}
+
+.features-desc-text {
+  padding-top: 40px;
+  padding-bottom: 118px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+}
+
+.features-desc-text span {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+}
+
+.features-icon-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.features-images-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.features-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer {
+  background-color: #444240;
+}
+
+.footer-wrap {
+  margin-top: 90px;
+  padding-top: 79px;
+  padding-bottom: 67px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column-info {
+  position: relative;
+}
+
+.footer-column-main-title-image {
+  position: absolute;
+  top: -10px;
+  left: -27px;
+}
+
+.footer-column-main-title-logo {
+  padding-bottom: 32px;
+  font-family: "Playfair Display";
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer-column-main-title {
+  padding-bottom: 33px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
