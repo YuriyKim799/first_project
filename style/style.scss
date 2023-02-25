@@ -96,7 +96,7 @@ body {
   // flex-direction: column;
   // justify-content: space-between;
   gap: 60px;
-  background-image: url(/img/promo_watch_main.png), url(/img/promo_Ellipse.png);
+  background-image: url('/img/promo_watch_main.png'), url('/img/promo_Ellipse.png');
   background-repeat: no-repeat;
   background-position-x: 82%, 52%;
   // position: relative;
@@ -259,7 +259,7 @@ body {
 .card-box {
   min-width: 370px;
   min-height: 467px;
-  background-image: url(/img/card_bg-image-Ellipse.svg);
+  background-image: url('/img/card_bg-image-Ellipse.svg');
   background-color: #FDFDFB;
   background-repeat: no-repeat;
   background-position: center;
